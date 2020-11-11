@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+section {
+    height: 100vh;
+    background-color: rgb(26, 24, 22);
+    font-family: 'PT Mono', monospace;
+}
+
+.sentence {
+    height:18vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sentence h2 {
+    
+    color:rgb(255, 229, 80);
+    text-align:center;
+    font-size:24px;
+}
+.sentence p {
+    font-family: 'Covered By Your Grace', cursive;
+    color:white;
+    text-align:center;
+    font-size: 72px;
+}
+.sentence h3 {
+    font-family: 'Covered By Your Grace', cursive;
+    color:rgb(255, 229, 80);
+    text-align:center;
+    font-size: 24px;
+}
+
+.intro {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: opacity 0.3s ease;
+}
+.intro h1 {
+    color:rgb(255, 229, 80);
+    font-size: 72px;
+}
+.intro b {
+    color:rgb(255, 229, 80);
+}
+.intro p1 {
+    color:rgb(255, 250, 202);
+    font-size: 32px;
+    text-align:center;
+}
+.intro p1 i{
+    color:rgb(30, 247, 84);
+}
+.intro p1 i1{
+    color:rgb(255, 49, 49);
+}
+.intro p2 {
+    color:rgb(151, 146, 138);
+    font-size: 28px;
+}
+.intro button,
+.interrogation button {
+    width: 350px;
+    height: 100px;
+    border-radius: 2.5px;
+    font-family: 'Covered By Your Grace', cursive;
+
+    background: none;
+    border: none;
+
+    color: rgb(255, 250, 202);
+    font-size: 62px;
+    background: rgb(88, 79, 72);
+
+    cursor: pointer;
+}
+
+.interrogation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: opacity 0.5s ease 0.2s;
+}
+.winner{
+    color: rgb(255, 250, 202);
+    text-align: center;
+    font-size: 54px;
+    padding-top: 30px;
+}
+
+.coins, .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.fadewane {
+    opacity:0;
+    pointer-events: none;
+}
+
+div.fadewax {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes p_slide {
+    0%{
+        transform: translateY(200px) translateX(100px) rotate(70deg) scale(.75);
+        opacity:0;
+    } 100% {
+        transform:rotate(0deg);
+        opacity:1;
+    }
+}
+
+@keyframes c_slide {
+    0%{
+        transform: translateY(-600px) translateX(-50px) rotate(-140deg) scale(.75);
+        opacity:0;
+    } 65% {
+        transform: translateY(-600px) translateX(-150px) rotate(-140deg) scale(.75);
+        opacity:0;
+    } 100% {
+        transform:rotate(0deg);
+        opacity:1;
+    }
+
+} 

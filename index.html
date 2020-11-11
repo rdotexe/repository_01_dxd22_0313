@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=PT+Mono&family=Zilla+Slab:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <title>P && D</title>
+</head>
+<body>
+
+    <section class="operation">
+        <div class="sentence">
+            <div class="player-score">
+                <h2>YOUR SENTENCE</h2>
+                <p>0</p>
+                <h3>months behind bars</h3>
+            </div>
+            <div class="computer-score">
+                <h2>COMPUTER SENTENCE</h2>
+                <p>0</p>
+                <h3>months behind bars</h3>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h1>Prisoner's Dilemma</h1>
+            <p1>After a string of high-stakes robberies, you and your partner <br>
+                in crime have been apprehended - and immediately separated. <br>
+                You have two options: rat out your partner, or stay quiet.
+                <br>
+            </p1>
+            <p2> [You have no way of communicating with your fellow thief.]</p2>
+            <p1>If <b>both</b> you and your partner <i1>rat each other out</i1>, you will both face
+                five months in jail. <br>
+                If <b>both</b> of you <i>stay quiet</i>, you will both only recieve two months in jail. <br><br>
+                If you <i1>betray</i1> a partner that chose to <i>stay quiet</i>, your partner will <br>
+                recieve the maximum sentence - while your charges are dropped entirely.<br>
+            </p1>
+            <p2>[A tempting notion - but your partner has been offered an identical deal.] </p2>
+            <button>Clock's ticking.</button>
+        </div>
+
+        <div class="interrogation fadewane">
+            <h2 class="winner">YOU STAND ACCUSED AND ALONE.
+                <br> Will you stay quiet?
+                <br> Or will you betray your partner? </h2>
+            <div class="coins">
+                <img class="player-coin" src="./assets/trust.png" alt="">
+                <img class="computer-coin" src="./assets/trust.png" alt="">
+            </div>
+            <div class="options">
+                <button class="trust">trust</button>
+                <button class="forsake">forsake</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
